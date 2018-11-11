@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAEAEA"
+    android:orientation="vertical"
+    android:padding="2dp"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:text="위도"
+                android:textColor="#191919"
+                android:textSize="24dp" />
+
+            <TextView
+                android:id="@+id/latitude"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#5D5D5D"
+                android:textSize="23dp"
+                tools:text="23151615" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:text="경도"
+                android:textColor="#191919"
+                android:textSize="24dp" />
+
+            <TextView
+                android:id="@+id/longitude"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#5D5D5D"
+                android:textSize="23dp"
+                tools:text="3213132" />
+
+            <View
+                android:layout_width="278dp"
+                android:layout_height="2px"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="#BDBDBD" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="189dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@color/colorPrimary"
+                android:text="Weather"
+                android:textColor="#ffffff" />
+
+
+            <LinearLayout
+                android:layout_width="384dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:gravity="fill_horizontal"
+                    android:text="국가 코드 :"
+                    android:textColor="@android:color/black"
+                    android:textSize="23dp" />
+
+                <TextView
+                    android:id="@+id/countrytext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:textColor="@android:color/black"
+                    android:textSize="23dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="367dp"
+                android:layout_height="2px"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:background="#BDBDBD" />
+
+            <LinearLayout
+                android:layout_width="384dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:gravity="fill_horizontal"
+                    android:text="온도 : "
+                    android:textColor="@android:color/black"
+                    android:textSize="23dp" />
+
+                <TextView
+                    android:id="@+id/tempresult"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:textColor="@android:color/black"
+                    android:textSize="23dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="367dp"
+                android:layout_height="2px"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:background="#BDBDBD" />
+
+
+            <LinearLayout
+                android:layout_width="384dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:gravity="fill_horizontal"
+                    android:text="구름 :  "
+                    android:textColor="@android:color/black"
+                    android:textSize="23dp" />
+
+                <TextView
+                    android:id="@+id/cloudstext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:textColor="@android:color/black"
+                    android:textSize="23dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="367dp"
+                android:layout_height="2px"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:background="#BDBDBD" />
+
+            <LinearLayout
+                android:layout_width="384dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:gravity="fill_horizontal"
+                    android:text="날씨 상태 : "
+                    android:textColor="@android:color/black"
+                    android:textSize="23dp" />
+
+
+                <TextView
+                    android:id="@+id/maintext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:gravity="fill_horizontal"
+                    android:textColor="@android:color/black"
+                    android:textSize="23dp" />
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+
+            </LinearLayout>
+            <View
+                android:layout_width="367dp"
+                android:layout_height="2px"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:background="#BDBDBD" />
+            <LinearLayout
+                android:layout_width="384dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:gravity="fill_horizontal"
+                    android:text="습도 : "
+                    android:textColor="@android:color/black"
+                    android:textSize="23dp" />
+
+
+                <TextView
+                    android:id="@+id/humiditytext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:textColor="@android:color/black"
+                    android:textSize="23dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="367dp"
+                android:layout_height="2px"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:background="#BDBDBD" />
+
+            <LinearLayout
+                android:layout_width="384dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:gravity="fill_horizontal"
+                    android:text="풍속 : "
+                    android:textColor="@android:color/black"
+                    android:textSize="23dp" />
+
+                <TextView
+                    android:id="@+id/windspeedtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:textColor="@android:color/black"
+                    android:textSize="23dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
